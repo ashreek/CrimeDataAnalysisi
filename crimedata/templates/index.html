@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mental Health Survey</h1>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <h3>Survey Questions</h3>
+        <label for="q1">Do you often feel overwhelmed by academic pressure?</label><br>
+        <select id="q1" name="q1" required>
+            <option value="Never">Never</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Sometimes">Sometimes</option>
+            <option value="Often">Often</option>
+            <option value="Always">Always</option>
+        </select><br>
+
+        <label for="q2">How often do you experience difficulty sleeping?</label><br>
+        <select id="q2" name="q2" required>
+            <option value="Never">Never</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Sometimes">Sometimes</option>
+            <option value="Often">Often</option>
+            <option value="Always">Always</option>
+        </select><br>
+
+        <label for="q3">Do you avoid sharing your feelings with others?</label><br>
+        <select id="q3" name="q3" required>
+            <option value="Strongly Disagree">Strongly Disagree</option>
+            <option value="Disagree">Disagree</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Agree">Agree</option>
+            <option value="Strongly Agree">Strongly Agree</option>
+        </select><br>
+
+        <label for="q4">Do you often feel isolated or alone?</label><br>
+        <select id="q4" name="q4" required>
+            <option value="Never">Never</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Sometimes">Sometimes</option>
+            <option value="Often">Often</option>
+            <option value="Always">Always</option>
+        </select><br>
+
+        <label for="q5">Do you find it difficult to focus during exams?</label><br>
+        <select id="q5" name="q5" required>
+            <option value="Never">Never</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Sometimes">Sometimes</option>
+            <option value="Often">Often</option>
+            <option value="Always">Always</option>
+        </select><br>
+
+        <a href="submission.html">
+            <button>SUBMIT</button>
+        </a>
+    </form>
+</body>
+</html>
